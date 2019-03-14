@@ -1,7 +1,6 @@
 <?php
 $numberOne = 100;
 $numberTwo = 52;
-$calcul = $numberOne * $numberTwo;
 ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
@@ -19,8 +18,8 @@ $calcul = $numberOne * $numberTwo;
   </ul>
   <?php
   while ($numberOne >= 10) {
-    echo 'on multiplie la première variable avec la seconde ' .$calcul . '. Numéro de ligne : ' . $numberOne. '<br/>';
-    // variable plus ++ permet d'incrementer
+    echo 'on multiplie la première variable avec la seconde ' . $numberOne * $numberTwo . '. Numéro de ligne : ' . $numberOne. '<br/>';
+    // variable plus -- permet décrementer
     $numberOne--;
   }
   ?>
