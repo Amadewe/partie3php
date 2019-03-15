@@ -1,5 +1,7 @@
 <?php
 $numberOne = 100;
+// création d'une variable
+//on l'initialise notre variable $numberTwo par un chiffre compris entre 1 et 100
 $numberTwo = 52;
 ?>
 <!DOCTYPE html>
@@ -16,12 +18,12 @@ $numberTwo = 52;
     <li>afficher le résultat</li>
     <li>décrémenter la première variable</li>
   </ul>
-  <?php
-  while ($numberOne >= 10) {
-    echo 'on multiplie la première variable avec la seconde ' . $numberOne * $numberTwo . '. Numéro de ligne : ' . $numberOne. '<br/>';
-    // variable plus -- permet décrementer
-    $numberOne--;
-  }
-  ?>
+  <!-- while peut se traduire par « tant que c'est vrai, exécute les instructions" -->
+  <!-- içi tant que la variable $numberOne n'est pas inférieur ou égal à 10 alors : -->
+  <?php  while ($numberOne >= 10) { ?>
+  <!-- on multiplie la $numberOne avec $numberTwo -->
+    <p>On multiplie la première variable avec la seconde <?= $numberOne * $numberTwo ?>. Numéro de ligne : <?= $numberOne-- ?></p>
+    <!--variable plus - - permet décrementer -->
+  <?php } ?>
 </body>
 </html>

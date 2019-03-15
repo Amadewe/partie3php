@@ -20,8 +20,8 @@ $numberTwo = 52;
   <!-- while peut se traduire par « tant que c'est vrai, exécute les instructions" -->
   <!-- içi tant que la variable $numberOne n'arrive pas égal ou sup à 20 alors : -->
   <?php  while ($numberOne <= 20) { ?>
-    <p>On multiplie la première variable avec la seconde : <?= $numberOne * $numberTwo ?>. Numéro de ligne <?= $numberOne; ?></p>
+    <p>On multiplie la première variable avec la seconde : <?= $numberOne * $numberTwo ?>. Numéro de ligne <?= $numberOne++; ?></p>
  <!-- variable plus ++ permet d'incrementer  -->
-  <?php $numberOne++; } ?>
+  <?php } ?>
 </body>
 </html>
