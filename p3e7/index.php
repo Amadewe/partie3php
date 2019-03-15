@@ -1,4 +1,3 @@
-<?php $number = 1; ?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
@@ -7,9 +6,12 @@
   </head>
   <body>
 <p>En allant de 1 à 100 avec un pas de 15, afficher le message On tient le bon bout.</p>
-<?php while ($number <= 100) { ?>
-  <!-- on faisant += 15 ça permet d'afficher seulement les chiffres de 15 en 15 jusqu'à 100. -->
-  <p><?= $number += 15 ?> On tient le bon bout.</p>
-<?php } ?>
+<!-- for est un autre type de boucle, dans une forme un peu plus condensée et plus commode à écrire,
+ce qui fait que for est assez fréquemment utilisé. -->
+<!-- on initialise sa variable directement dans la condition -->
+<!-- la variable $number n'est pas inférieur ou égal à 0 alors on la décremente d'1 "pas" -->
+  <?php for ($number = 1; $number <= 100; $number +=15) { ?>
+    <p><?= $number ?> On tient le bon bout.</p>
+  <?php } ?>
   </body>
 </html>

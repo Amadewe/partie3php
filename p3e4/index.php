@@ -20,14 +20,5 @@ $number = 1;
   <?php while ($number <= 10) { ?>
     <p>resultat <?= $number += 0.5 ?></p>
     <?php } ?>
-
-<p>Avec la boucle for</p>
-<!-- for est un autre type de boucle, dans une forme un peu plus condensée et plus commode à écrire,
-ce qui fait que for est assez fréquemment utilisé. -->
-<!-- on initialise sa variable directement dans la condition -->
-<!-- la variable $numberTwo n'est pas supérieur ou égal à 10 alors on l'incremente de la moitié de sa valeur d'ou +=0.5 -->
-  <?php for ($numberTwo = 1; $numberTwo <= 10; $numberTwo +=0.5) { ?>
-    <p>resultat <?= $numberTwo ?></p>
-  <?php } ?>
 </body>
 </html>

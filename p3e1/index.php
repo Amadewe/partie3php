@@ -15,11 +15,12 @@ $display = 0;
     <li>l'incrementer</li>
   </ul>
   <!-- while peut se traduire par « tant que c'est vrai, exécute les instructions" -->
-  <!-- içi tant que la variable $numberOne n'arrive pas égal ou sup à 20 alors : -->
+  <!-- içi tant que la variable $display n'est pas égal ou sup à 10 alors : -->
   <?php
   while ($display <= 10) { ?>
-    <p>J'affiche et j'incremente jusqu'à 10, nous sommes à la ligne : <?= $display ?></p>
-    <!--variable plus ++ permet d'incrementer -->
-    <?php $display++; } ?>
-  </body>
-  </html>
+    <!--j'incrémente ma variable avec le ++ -->
+    <p>J'affiche et j'incremente jusqu'à 10, nous sommes à la ligne : <?= $display++ ?></p>
+
+  <?php } ?>
+</body>
+</html>
