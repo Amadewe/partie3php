@@ -17,10 +17,22 @@ $display = 0;
   <!-- while peut se traduire par « tant que c'est vrai, exécute les instructions" -->
   <!-- içi tant que la variable $display n'est pas égal ou sup à 10 alors : -->
   <?php
-  while ($display <= 10) { ?>
+  while ($display < 10) { ?>
+    <p>J'affiche et j'incremente jusqu'à 10, nous sommes à la ligne : <?= $display ?></p>
     <!--j'incrémente ma variable avec le ++ -->
-    <p>J'affiche et j'incremente jusqu'à 10, nous sommes à la ligne : <?= $display++ ?></p>
+  <?php $display ++; } ?>
 
-  <?php } ?>
+  <p>CORRECTION</p>
+  <?php
+  //Elle prend en paramètre l'initialisation de la valeur de la variable
+  $var=0;
+  // On utilise la boucle while
+  while ($var < 10) { ?>
+    <p><?= $var ?></p>
+    <?php
+    //puis sa valeur à atteindre et enfin le mode d'incrémentation
+    $var++;
+  }
+   ?>
 </body>
 </html>

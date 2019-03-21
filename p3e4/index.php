@@ -18,7 +18,8 @@ $number = 1;
   <!-- while peut se traduire par « tant que c'est vrai, exécute les instructions" -->
   <!-- içi tant que la variable $number n'est pas supérieur ou égal à 10 alors on l'incremente de la moitié de sa valeur d'ou +=0.5-->
   <?php while ($number <= 10) { ?>
-    <p>resultat <?= $number += 0.5 ?></p>
-    <?php } ?>
+    <p>resultat <?= $number ?></p>
+    <!-- pour la moitier de la valeur on fait un +=var/2 -->
+    <?php $number += $number/2; } ?>
 </body>
 </html>

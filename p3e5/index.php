@@ -11,7 +11,7 @@
   ce qui fait que for est assez fréquemment utilisé. -->
   <!-- on initialise sa variable directement dans la condition -->
   <!-- la variable $number n'est pas supérieur ou égal à 15 alors on l'incremente d'1 "pas" -->
-    <?php for ($number = 1; $number <= 15; $number +=1) { ?>
+    <?php for ($number = 1; $number <= 15; $number ++) { ?>
       <p><?= $number ?> On y arrive presque.</p>
     <?php } ?>
   </body>
