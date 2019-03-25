@@ -11,7 +11,7 @@
   <!-- on initialise sa variable directement dans la condition -->
   <!-- la variable $number n'est pas inférieur ou égal à 0 alors on la décremente d'1 "pas" -->
   <?php for ($number = 20; $number >= 0; $number -=1) { ?>
-    <p><?= $number ?> On y arrive presque.</p>
+    <p><?= $number ?> C'est presque bon.</p>
   <?php } ?>
 </body>
 </html>
